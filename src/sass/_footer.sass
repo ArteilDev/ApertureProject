@@ -1,0 +1,64 @@
+.footer-container
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr))
+    &__about
+        margin-bottom: 2rem
+        &_text
+            font-size: 1.3rem
+            color: $color-gray
+    &__list
+        display: flex
+        justify-content: space-evenly
+        margin-bottom: 2rem
+        &-title
+            margin-bottom: 1.5rem
+            text-transform: uppercase
+            color: $color-gray
+    &__link
+        display: block
+        margin-bottom: 1rem
+        color: #fff
+
+    &__description
+        display: flex
+        justify-content: space-between
+        padding-top: 3.6rem
+        padding-bottom: 3.6rem
+        &_text
+            font-size: 1.3rem
+            color: $color-gray
+
+.subscribe
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr))
+    padding-top: 3.6rem
+    padding-bottom: 3.6rem
+    &__text
+        &_title
+            text-transform: uppercase
+            margin-bottom: 2rem
+        &_subtitle
+            font-size: 1.3rem
+            color: $color-gray
+    &__form
+        justify-self: flex-end
+        align-self: center
+        &_container
+            position: relative
+    &__input
+        padding-left: 1rem
+        padding-right: 15rem
+        width: 45rem
+        height: 5rem
+        font-size: 1.8rem
+        border: none
+        border-radius: 1rem
+    &__button
+        position: absolute
+        padding: 1.2rem 3rem
+        color: #fff
+        background-color: black
+        border: none
+        border-radius: 1rem
+        top: .5rem
+        right: 1rem

@@ -1,3 +1,5 @@
+$color-gray: #C0C0C0
+    
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -16,10 +18,20 @@ body
 a
     text-decoration: none
 
+li
+    list-style: none
+
+hr
+    width: 90%
+    margin: 0 auto
+
 .container
     display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: 100vh minmax(150rem, min-content) repeat(3, minmax(min-content, 60rem)) 
+    grid-template-rows: 90vh min-content repeat(7, min-content)
+
+.padding
+    padding-right: 10rem
+    padding-left: 10rem
 
 .text-center
     text-align: center

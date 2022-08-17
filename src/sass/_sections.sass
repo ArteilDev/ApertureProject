@@ -1,9 +1,70 @@
 .section-gallery
     display: flex
     flex-direction: column
-    // grid-template-columns: repeat(2, minmax(min-content, 57rem))
-    // grid-template-rows: repeat(2, minmax(4rem, min-content)) minmax(min-content, 12rem)
     justify-content: center
+    padding-top: 15vh
+    padding-bottom: 15vh
+    &__subtitle
+        margin-bottom: 4rem
+
+.fullscreen-photo
+    position: relative
+    &__img
+        width: 100%
+        object-fit: cover
+    &__text
+        position: absolute
+        top: 50%
+        right: 5rem
+        max-width: 30rem
+        &_title
+            text-transform: uppercase
+        &_subtitle
+            color: $color-gray
+
+.about
+    position: relative
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr))
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-right: 10vw
+        padding-left: 10vw
+    &__desc
+        text-transform: uppercase
+        color: $color-gray
+    &__title
+        margin-bottom: 1rem
+        font-size: 2.8rem
+    &__img
+        width: 100%
+
+.clients
+    padding-top: 15vh
+    padding-bottom: 15vh
+    &__text
+        margin-bottom: 5rem
+    &__title
+        margin-bottom: 1.5rem
+    &__list
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
+        grid-row-gap: 5rem
+        align-items: center
+        justify-content: center
+    &__logo
+        justify-self: center
+
+.contact-us
+    display: flex
+    flex-direction: column
     align-items: center
-    padding: 10vh
-        
+    padding-top: 15vh
+    padding-bottom: 15vh
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        max-width: 60rem
