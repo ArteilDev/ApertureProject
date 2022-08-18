@@ -1,20 +1,23 @@
 .button
+    padding: 1rem 2rem
     font-size: 1.6rem
     color: #000000
     background-color: #fff
-    border-radius: 1.4rem
+    transition: .4s
     &_nav
-        padding: 1rem 2rem
+        outline: 2px solid #fff
+        &:hover
+            box-shadow: inset 10em 0 0 0 #000
+            color: #fff
+            transition: .4s
     &_read
         display: flex
         align-items: center
-        justify-content: flex-start
-        padding: .5rem 1rem
+        justify-content: center
         margin-top: 3rem
         max-width: 16rem
-    &__circle
-        margin-right: .5rem
-        width: 3.2rem
-        height: 3.2rem
-        background-color: black
-        border-radius: 100%
+        &:hover
+            border-radius: .5rem
+            box-shadow: 0 0.5em 0.5em -0.4em #fff
+            transform: translateY(-0.25em)
+            transition: .4s
