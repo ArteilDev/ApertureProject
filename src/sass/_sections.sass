@@ -17,6 +17,11 @@
         top: 50%
         right: 5rem
         max-width: 30rem
+        @include respond (phone)
+            top: 45%
+            max-width: 80%
+            text-align: center
+            font-size: 1rem
         &_title
             text-transform: uppercase
         &_subtitle
@@ -32,6 +37,9 @@
         justify-content: center
         padding-right: 10vw
         padding-left: 10vw
+        @include respond (phone)
+            padding-top: 3rem
+            padding-bottom: 3rem
     &__desc
         text-transform: uppercase
         color: $color-gray

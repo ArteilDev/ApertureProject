@@ -1,8 +1,10 @@
 .cards
     position: relative
     display: grid
-    grid-template-columns: repeat(auto-fit,  minmax(60rem,1fr))
+    grid-template-columns: repeat(2,  minmax(30rem,1fr))
     grid-gap: 1.6rem
+    @include respond (tab-port)
+        grid-template-columns: repeat(1,  minmax(30rem,1fr))
 
     &__item
         position: relative

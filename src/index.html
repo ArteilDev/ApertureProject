@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,13 +16,21 @@
         <header class="header">
             <nav class="nav">
                 <a href="/" class="nav__logo"><img src="img/logo.svg" alt="Aperture"></a>
-                <div class="navbar">
+                <div class="navbar" id="navbar">
                     <a href="#" class="navbar__item">Business areas</a>
                     <a href="#" class="navbar__item">Featured images</a>
                     <a href="#" class="navbar__item">Gear cage</a>
                     <a href="#" class="navbar__item">Contact</a>
                     <a href="#" class="button button_nav">Get template</a>
                 </div>
+                <div class="navbar-responisve" id="navbar-responsive" style="display: none;">
+                    <a href="#" class="navbar-responisve__item">Business areas</a>
+                    <a href="#" class="navbar-responisve__item">Featured images</a>
+                    <a href="#" class="navbar-responisve__item">Gear cage</a>
+                    <a href="#" class="navbar-responisve__item">Contact</a>
+                    <a href="#" class="button button_nav">Get template</a>
+                </div>
+                <a href="#" id="navMenu" class="nav__menu">&#9776;</a>
             </nav>
             <div class="preview">
                 <div class="preview__text">
@@ -227,12 +235,13 @@
             <div class="footer-container__description padding">
                 <p class="footer-container__description_text">© Aperture Photography, Inc. All rights reserved.</p>
                 <div class="footer-container__social">
-                    <a href="#"><img src="img/twiter.png" alt="Twitter"></a>
-                    <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><span class="footer-container__icon icon-twitter"></span></a>
+                    <a href="#"><span class="footer-container__icon icon-instagram"></span></a>
+                    <a href="#"><span class="footer-container__icon icon-facebook"></span></a>
                 </div>
             </div>
         </footer>
     </div>
 </body>
+<script src="js/main.js"></script>
 </html>
